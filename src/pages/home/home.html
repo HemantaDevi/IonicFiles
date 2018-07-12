@@ -7,8 +7,25 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <button ion-button color="secondary" outline (click)="GoToProfile()">Profile Page</button>
+
+  <button ion-button icon-start color="danger" (click)="callPhone('57864563')">
+      <ion-icon name="call"></ion-icon>
+      Call yaya
+    </button>
+
+    <button ion-button icon-start color="primary" (click)="sendMail('hemantahuril@gmail.com')">
+        <ion-icon name="mail"></ion-icon>
+        mailing
+      </button>
+
+
+      <button ion-button icon-start color="light" (click)="sendSMS('57864563')">
+          <ion-icon name="mail"></ion-icon>
+          smsing
+        </button>
+
+        <ion-content padding>
+            <button ion-button color="secondary" outline (click)="GoToQuotesPage()">Quotes Page</button>
+
 </ion-content>
